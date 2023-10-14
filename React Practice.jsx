@@ -117,3 +117,10 @@ function MyButton() {
       </button>
     );
   }
+
+// ignore the lines of code below
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './styles.css';
+
+import App from './App';
