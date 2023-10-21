@@ -245,3 +245,29 @@ export default function Board() {
     }
     return null;
   }
+
+  export default function Header() {
+    return (
+        <h1>The new era of technology</h1>
+    )
+  }
+
+  function Profile() {
+    return (
+      <img
+        src="https://i.imgur.com/QIrZWGIs.jpg"
+        alt="Alan L. Hart"
+      />
+    );
+  }
+  
+  export default function Gallery() {
+    return (
+      <section>
+        <h1>Amazing scientists</h1>
+        <Profile />
+        <Profile />
+        <Profile />
+      </section>
+    );
+  }
