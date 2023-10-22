@@ -271,3 +271,71 @@ export default function Board() {
       </section>
     );
   }
+
+  function Content() {
+    return (
+      <p>Lorem ipsum dolor sit amet.</p>
+    );
+  };
+
+  export defaulf function Body () {
+    return(
+      <div>
+      <h1>About our company</h1>
+      <Content />
+      </div>
+    )
+  }
+
+  import Content from './Content.js';
+
+  export default function Page () {
+    return(
+      <Content />
+    )
+  }
+
+
+  // how to import and export a default function
+
+  export default function Transaction () {
+    return (
+      <ul>
+        <li>cars</li>
+        <li>Accessaries</li>
+      </ul>
+    );
+  }
+
+  import Transactions from ',/transaction.js';
+
+  function OtherItems () {
+    return (
+      <Transactions />
+    )
+  }
+
+  // importing and exporting a named function 
+
+  export function MyList () {
+    return (
+      <ul>
+      <li>cars</li>
+      <li>Accessaries</li>
+    </ul>
+    );
+  }
+
+  import {MyList} from './MyList.js';
+
+  function PageDetails () {
+       return (
+        <MyList />
+       );
+  }
+
+  // exporting and importing multiple components from the same file.
+
+// Note: A file can only have one default export, but can have multiple named export!
+
+
